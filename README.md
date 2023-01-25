@@ -1,3 +1,5 @@
+#강의 내용 정리
+=======================
 const = 변할 수 없는 값
 let = 변할 수 있는 값
 
@@ -21,10 +23,12 @@ day[2] = "pizza" 3번째 값 변경
 days.push("water") 배열의 마지막에 값 추가
 
 object만들기
+```
 const player = {
-name: "a",
-age: 24
+  name: "a",
+  age: 24
 };
+```
 
 console.log(player.name) player의 name출력
 player.name = "b"; player의 name 업데이트
@@ -33,37 +37,44 @@ player.tall = 000 player에 tall 추가
 function = 반복작업 효율적으로
 
 function이 없다면?
+```
 console.log("Hello my name is a");
 console.log("Hello my name is b");
 console.log("Hello my name is c"); >> 매우 비효율적
+```
 
 function으로 제작한다면?
+```
 function sayHello(nameOfPerson) {
-console.log("Hello my name is" + nameOfPerson);
+  console.log("Hello my name is" + nameOfPerson);
 }
+
 
 sayHello("a");
 sayHello("b");
 sayHello("c");
+```
 
 object와 function을 합친 계산기 만들기
+```
 const calculator = {
-add: function(a, b) {
-console.log(a + b);
-},
-sub: function(a, b) {
-console.log(a - b);
-},
-mul: function(a, b) {
-console.log(a \* b);
-},
-div: function(a, b) {
-console.log(a / b);
-},
-power: function(a, b) {
-console.log(a \*\* b);
-},
+  add: function(a, b) {
+  console.log(a + b);
+  },
+  sub: function(a, b) {
+  console.log(a - b);
+  },
+  mul: function(a, b) {
+  console.log(a \* b);
+  },
+  div: function(a, b) {
+  console.log(a / b);
+  },
+  power: function(a, b) {
+  console.log(a \*\* b);
+  },
 };
+```
 
 function으로 값을 얻기 위해서는 return을 이용해야됨
 
