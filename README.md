@@ -1,5 +1,5 @@
-#강의 내용 정리
-=======================
+# #강의 내용 정리
+
 const = 변할 수 없는 값
 let = 변할 수 있는 값
 
@@ -23,6 +23,7 @@ day[2] = "pizza" 3번째 값 변경
 days.push("water") 배열의 마지막에 값 추가
 
 object만들기
+
 ```
 const player = {
   name: "a",
@@ -37,6 +38,7 @@ player.tall = 000 player에 tall 추가
 function = 반복작업 효율적으로
 
 function이 없다면?
+
 ```
 console.log("Hello my name is a");
 console.log("Hello my name is b");
@@ -44,6 +46,7 @@ console.log("Hello my name is c"); >> 매우 비효율적
 ```
 
 function으로 제작한다면?
+
 ```
 function sayHello(nameOfPerson) {
   console.log("Hello my name is" + nameOfPerson);
@@ -56,6 +59,7 @@ sayHello("c");
 ```
 
 object와 function을 합친 계산기 만들기
+
 ```
 const calculator = {
   add: function(a, b) {
@@ -84,3 +88,85 @@ string을 int로 변경하는방법은? parseInt
 parseInt("hello") 안에 string을 썻을 때는? Nan = Not a Number
 
 JS에서도 If문과 논리연산자 사용 가능!
+
+---
+
+### html에서 js로 불러오는 방법
+
+1. getElementById, getElementByClassName 이용하기
+2. querySeletor, querySeletorAll 이용하기 << 주로 선호
+
+#### 마우스 클릭, 올리기, 내리기 이벤트
+
+```
+const title = document.querySelector("div.hello:first-child h1");
+
+console.dir(title);
+
+function handleTitleClick() {
+    title.style.color = "blue";
+}
+
+function handleMouseEnter() {
+    title.innerText = "Mouse is here!";
+}
+
+function handleMouseLeave() {
+    title.innerText = "Mouse is gone!";
+}
+
+title.addEventListener("click", handleTitleClick);
+title.addEventListener("mouseenter", handleMouseEnter);
+title.addEventListener("mouseleave", handleMouseLeave);
+
+title.onclick = handleTitleClick;
+title.onmouseenter = handleMouseEnter;
+title.onmouseleave = handleMouseLeave;
+```
+
+---
+
+#### 화면(창) 사이즈 변환, 우클릭 이벤트
+
+```
+function handleWindowResize() {
+    document.body.style.background = "tomato";
+}
+
+function handleContextMenu() {
+    title.innerText = "That was a right click!";
+    title.style.color = "blue";
+}
+
+window.addEventListener("resize", handleWindowResize);
+window.addEventListener("contextmenu", handleContextMenu);
+```
+
+---
+
+#### 복사(컨트롤 + C) 이벤트
+
+```
+function handleWindowCopy() {
+    alert("copier!");
+}
+
+window.addEventListener("copy", handleWindowCopy);
+```
+
+---
+
+#### 와이파이 ON/OFF 이벤트
+
+```
+function handleWindowOffline() {
+    alert("SOS no WIFI");
+}
+
+function handleWindowOnline() {
+    alert("ALL GOOOOOD");
+}
+
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
+```
