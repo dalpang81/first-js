@@ -170,3 +170,11 @@ function handleWindowOnline() {
 window.addEventListener("offline", handleWindowOffline);
 window.addEventListener("online", handleWindowOnline);
 ```
+
+---
+
+### classList의 다양한 Function
+
+- classList를 이용하여 원래의 html의 클래스를 잃지 않고 클래스를 수정할 수 있다.
+- 주로 add, remove toggle이 사용
+- toggle은 add와 remove를 모두 가지고 있는 Function으로 코드를 압축할 수 있다.
