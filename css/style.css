@@ -1,3 +1,32 @@
+@import "greeting.css";
+@import "clock-weather.css";
+@import "quote-todo.css";
+@import "bgm.css";
+
+body {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 1080px;
+  width: 1920px;
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px 0px gray;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
 .hidden {
-    display: none;
+  display: none;
 }

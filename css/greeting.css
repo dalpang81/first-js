@@ -1,0 +1,30 @@
+.greeting-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting-box h1 {
+  margin-top: 200px;
+  font-size: 100px;
+  border-bottom: 5px solid rgba(0, 0, 0, 1);
+}
+
+#greeting {
+  display: flex;
+}
+
+#login-form {
+  margin-top: 200px;
+  border-bottom: 5px solid rgba(0, 0, 0, 1);
+}
+
+#login-form input {
+  border: none;
+  font-size: 70px;
+  width: 77vh;
+}
+
+.border-bar {
+  background-color: blue;
+}
