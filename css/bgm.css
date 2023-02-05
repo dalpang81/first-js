@@ -17,3 +17,7 @@
 .bgmBtn1 {
   margin-right: 20px;
 }
+
+.audioBtn button:hover {
+  cursor: pointer;
+}
