@@ -5,9 +5,11 @@
 }
 
 .greeting-box h1 {
-  margin-top: 200px;
-  font-size: 100px;
-  border-bottom: 5px solid rgba(0, 0, 0, 1);
+  margin-top: 300px;
+  margin-bottom: 0;
+  font-size: 80px;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.8);
+  color:antiquewhite;
 }
 
 #greeting {
@@ -15,14 +17,20 @@
 }
 
 #login-form {
-  margin-top: 200px;
+  margin-top: 300px;
+  margin-left: 0px;
   border-bottom: 5px solid rgba(0, 0, 0, 1);
 }
 
 #login-form input {
   border: none;
-  font-size: 70px;
-  width: 77vh;
+  font-size: 60px;
+  width: 55vh;
+  background-color: transparent;
+}
+
+#login-form input::placeholder {
+  color: white;
 }
 
 .border-bar {
